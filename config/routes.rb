@@ -1,6 +1,7 @@
 BocaChondor::Application.routes.draw do
   resources :names
   get 'generate' => 'names#generate', as: 'generate'
+  get 'refresh' => 'names#refresh', as: 'refresh'
   root 'names#index'
 
   # The priority is based upon order of creation: first created -> highest priority.

@@ -12,6 +12,8 @@ class NamesController < ApplicationController
     render :failed unless @name.save
   end
 
+  def refresh
+  end
 
   private
   def name_params
