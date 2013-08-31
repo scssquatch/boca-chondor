@@ -1,4 +1,8 @@
 BocaChondor::Application.routes.draw do
+  resources :names
+  post 'generate' => 'names#generate', as: 'generate'
+  root 'names#index'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -1,0 +1,6 @@
+= form_for @name, remote: true do |f|
+  = f.label :name
+  = f.text_field :name
+= button_to "Generate", { controller: :names, action: :generate }, { remote: true }
+.names
+  = render @names
