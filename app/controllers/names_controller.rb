@@ -8,7 +8,8 @@ class NamesController < ApplicationController
   end
 
   def create
-    name = Name.create(name_params)
+    @name = Name.new(name_params)
+    render :failed unless @name.save
   end
 
 

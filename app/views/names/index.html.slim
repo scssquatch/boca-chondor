@@ -1,6 +1,7 @@
 = form_for @name, remote: true do |f|
-  = f.label :name
+  p What's the Name?
+  = link_to "GENERATE A NAME", generate_path, remote: true, class: "generate_name"
+  .errors
   = f.text_field :name
-= button_to "Generate", { controller: :names, action: :generate }, { remote: true }
 .names
   = render @names

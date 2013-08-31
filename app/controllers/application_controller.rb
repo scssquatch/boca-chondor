@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
   before_filter :set_names
 
   def set_names
-    @names = Name.all
+    @names = Name.order('created_at DESC')
     @first_names = Name.all.map(&:first_name)
     @last_names = Name.all.map(&:last_name)
   end
