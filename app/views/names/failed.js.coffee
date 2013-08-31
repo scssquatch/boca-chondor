@@ -1,1 +1,1 @@
-$('.errors').html("Try Again")
+$('.errors').html("<%=j render 'errors' %>")

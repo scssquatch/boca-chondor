@@ -1,5 +1,5 @@
 class Name < ActiveRecord::Base
-  validates :name, presence: true, length: { maximum: 30 }
+  validates :name, presence: true, uniqueness: true, length: { maximum: 30 }
 
   def first_name
     name.split(' ').first

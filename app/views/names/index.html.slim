@@ -2,6 +2,11 @@
   p What's the Name?
   = link_to "GENERATE A NAME", generate_path, remote: true, class: "generate_name"
   .errors
+    = render 'errors'
+    - if @name.errors.any?
+      ul
+        - @name.errors.full_messages.each do |message|
+          = message
   = f.text_field :name, placeholder: "Enter the name and press enter.."
   = f.submit "Submit"
 .names
