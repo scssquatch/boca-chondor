@@ -2,6 +2,6 @@
   p What's the Name?
   = link_to "GENERATE A NAME", generate_path, remote: true, class: "generate_name"
   .errors
-  = f.text_field :name
+  = f.text_field :name, placeholder: "Enter the name and press enter.."
 .names
   = render @names
