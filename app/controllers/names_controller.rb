@@ -15,6 +15,10 @@ class NamesController < ApplicationController
   def refresh
   end
 
+  def undo
+    Name.find(params[:id]).destroy
+  end
+
   private
   def name_params
     params.require(:name).permit(:name)
