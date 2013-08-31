@@ -3,5 +3,6 @@
   = link_to "GENERATE A NAME", generate_path, remote: true, class: "generate_name"
   .errors
   = f.text_field :name, placeholder: "Enter the name and press enter.."
+  = f.submit "Submit"
 .names
   = render @names
