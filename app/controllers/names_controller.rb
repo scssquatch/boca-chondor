@@ -21,6 +21,6 @@ class NamesController < ApplicationController
   end
 
   def random_name
-    Name.all.map{|name| name.name.split(' ')}.flatten.sample.capitalize
+    @names.map{|name| name.name.split(' ')}.flatten.sample.capitalize
   end
 end
