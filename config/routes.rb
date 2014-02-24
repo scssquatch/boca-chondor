@@ -1,6 +1,7 @@
 BocaChondor::Application.routes.draw do
   resources :names
   get 'generate' => 'names#generate', as: 'generate'
+  get 'random' => 'names#random', as: 'random'
   get 'refresh' => 'names#refresh', as: 'refresh'
   root 'names#index'
 

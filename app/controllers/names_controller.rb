@@ -7,6 +7,10 @@ class NamesController < ApplicationController
     @generated_name = "#{random_name} #{random_name}"
   end
 
+  def random
+    @random_name = Name.order("RANDOM()").first
+  end
+
   def create
     @name = Name.new(name_params)
     render :failed unless @name.save
