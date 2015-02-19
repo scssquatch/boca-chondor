@@ -2,4 +2,4 @@
 
 Just a ridiculous application my friends and I use to keep history of the ridiculous fake names we make up for fun.
 
-boca-chondor.herokuapp.com
+http://boca-chondor.herokuapp.com
