@@ -1,0 +1,10 @@
+.card {
+  border: 3px solid #b8e356 !important;
+}
+.btn.btn-success {
+  background: #b8e356 !important;
+  border-color: #a8d356 !important;
+}
+.btn.btn-success:hover {
+  background: #a8d356 !important;
+}
