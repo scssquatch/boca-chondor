@@ -81,6 +81,4 @@ test:
 #
 production:
   <<: *default
-  database: boca_chondor_react_production
-  username: boca_chondor_react
-  password: <%= ENV["BOCA_CHONDOR_REACT_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
