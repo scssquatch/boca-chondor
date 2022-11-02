@@ -13,7 +13,7 @@ services:
     envVars:
       - key: DATABASE_URL
         fromDatabase:
-          name: boca-chondor
+          name: boca_chondor_production
           property: connectionString
       - key: RAILS_MASTER_KEY
         sync: false
