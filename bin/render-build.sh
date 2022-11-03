@@ -3,8 +3,8 @@
 set -o errexit
 
 bundle install
+yarn build
+yarn build:css
 bundle exec rake assets:precompile
 bundle exec rake assets:clean
 bundle exec rake db:migrate
-yarn build
-yarn build:css
