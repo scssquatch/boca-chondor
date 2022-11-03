@@ -70,7 +70,7 @@ const Names = () => {
           <Col key={id} lg={true} className="mb-5" style={{ minWidth: '300px', maxWidth: '300px' }}>
             <Card>
               <Card.Body>
-                <Card.Title className="text-center">
+                <Card.Title className="text-center mb-0">
                   {pretty_name}
                 </Card.Title>
               </Card.Body>
